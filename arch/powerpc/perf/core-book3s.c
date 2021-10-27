@@ -2149,6 +2149,7 @@ static void record_and_restart(struct perf_event *event, unsigned long val,
 	s64 prev, delta, left;
 	int record = 0;
 
+
 	if (event->hw.state & PERF_HES_STOPPED) {
 		write_pmc(event->hw.idx, 0);
 		return;
